@@ -1,0 +1,19 @@
+<section>
+  <mat-checkbox [(ngModel)]="showName" name="showName">Nome</mat-checkbox>
+  <mat-checkbox [(ngModel)]="showEmail" name="showEmail">Email</mat-checkbox>
+  <mat-checkbox [(ngModel)]="showCelular" name="showCelular">Celular</mat-checkbox>
+</section>
+
+<br><br><hr>
+
+<section>
+  <mat-form-field *ngIf="showName">
+    <input placeholder="Nome">
+  </mat-form-field>
+  <mat-form-field *ngIf="showEmail">
+    <input placeholder="Email">
+  </mat-form-field>
+  <mat-form-field *ngIf="showCelular">
+    <input placeholder="Celular">
+  </mat-form-field>
+</section>
